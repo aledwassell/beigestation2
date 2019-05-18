@@ -1,0 +1,17 @@
+
+    <div class="brand">
+        <a routerLink="">{{title}}</a>
+    </div>
+    <div class="list-links">
+        <ul>
+            <li *ngFor="let link of links">
+                <a routerLink="{{link.url}}">{{link.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="social">
+        <a *ngFor="let link of sociLinks" href="/">
+          {{link}}
+        </a>
+    </div> -->
+    

@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="container">
+    <app-youtube-player 
+      [videoId]="videoId"
+      [height]="466"
+      [width]="700"></app-youtube-player>
+    <div class="video-list">
+      <app-video-item *ngFor="let video of (videoData$ | async)?.items"
+      [video]="video"
+      (videoSelected)="setVideoId($event)"></app-video-item>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.social {
+	display: flex;
+}
+
+.social a {
+	font-size: 24px;
+	margin: 0 5px 0 5px;
+	cursor: pointer;
+}

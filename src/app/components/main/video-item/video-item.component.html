@@ -1,0 +1,6 @@
+<div *ngIf="video.id.videoId" [style.backgroundImage]="'url('+ video.snippet.thumbnails.high.url +')'">
+  <h2 class="mat-h2">{{video.snippet.title}}</h2>
+  <button mat-icon-button (click)="videoSelected.emit(video.id.videoId)">
+    <mat-icon>play_arrow</mat-icon>
+  </button>
+</div>

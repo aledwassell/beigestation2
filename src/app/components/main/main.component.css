@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "left right";
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 32px;
+  padding: 32px 32px 0 32px;
+  max-width: 1200px;
+}
+
+app-youtube-player {
+  width: 100%;
+  grid-area: right;
+}
+
+.video-list {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+}

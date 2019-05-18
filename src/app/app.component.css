@@ -1,0 +1,31 @@
+div {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas: "navi" "main" "footer";
+  grid-template-columns: "left" "center" "right"
+}
+app-navigation {
+  grid-area: navi;
+  display: flex;
+  background-color: #ffffff;
+  padding: 0 32px;
+  flex-direction: row;
+  align-items: center;
+}
+
+div .main-container {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+app-footer {
+  grid-area: footer;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+	justify-content: center;
+	background-color: inherit;
+}

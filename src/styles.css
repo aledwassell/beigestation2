@@ -1,0 +1,13 @@
+html, body{
+  margin: 0;
+  background-color: #D5BA98;
+}
+
+* {
+  color: #111111;
+  font-family: 'Roboto';
+}
+
+a {
+  text-decoration: none;
+}
