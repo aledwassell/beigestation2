@@ -28,3 +28,9 @@ app-youtube-player {
   display: flex;
   flex-direction: column;
 }
+
+.shop {
+  width: 100%;
+  height: 200px;
+  background-color: pink;
+}
