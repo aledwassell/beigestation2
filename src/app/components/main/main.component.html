@@ -6,9 +6,10 @@
       [width]="700"></app-youtube-player>
     <div class="video-list">
       <app-video-item *ngFor="let video of (videoData$ | async)?.items"
+      [style.backgroundImage]="'url('+ video.snippet.thumbnails.high.url +')'"
       [video]="video"
       (videoSelected)="setVideoId($event)"></app-video-item>
     </div>
-    <div class="shop"></div>
   </div>
+  <app-shop></app-shop>
 </div>

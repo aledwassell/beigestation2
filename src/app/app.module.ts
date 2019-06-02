@@ -22,6 +22,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { VideoItemComponent } from './components/main/video-item/video-item.component';
 import {AppRouterModule} from './modules/router/router.module';
 import { AboutComponent } from './components/about/about.component';
+import { ShopComponent } from './components/main/shop/shop.component';
 
 @NgModule({
   imports:      [
@@ -37,7 +38,7 @@ import { AboutComponent } from './components/about/about.component';
     MatCardModule,
     AppRouterModule,
   ],
-  declarations: [ AppComponent, HelloComponent, FooterComponent, MainComponent, NavigationComponent, VideoItemComponent, AboutComponent ],
+  declarations: [ AppComponent, HelloComponent, FooterComponent, MainComponent, NavigationComponent, VideoItemComponent, AboutComponent, ShopComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ServerConnectorService]
 })
