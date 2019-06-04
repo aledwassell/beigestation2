@@ -7,7 +7,8 @@ import {
   MatMenuModule,
   MatToolbarModule,
   MatIconModule,
-  MatCardModule
+  MatCardModule,
+  MatGridListModule
 } from '@angular/material';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { ShopComponent } from './components/main/shop/shop.component';
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
+    MatGridListModule,
     MatCardModule,
     AppRouterModule,
   ],

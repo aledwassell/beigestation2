@@ -18,8 +18,8 @@ export class NavigationComponent implements OnInit {
     // TODO When navigating back to home, make sure on navigation is triggered and the video is reloaded.
     ngOnInit() {
         this.links = [
-            // {name: 'LIVE', url: '/live'},
-            // {name: 'SHOP', url: '/shop'},
+            {name: 'LIVE', url: '/live'},
+            {name: 'SHOP', url: '/shop'},
             {name: 'ABOUT', url: '/about'},
         ];
     }

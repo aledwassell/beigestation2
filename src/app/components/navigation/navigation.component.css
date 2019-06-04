@@ -1,49 +1,30 @@
 :host {
   display: flex;
   background-color: #ffffff;
-  padding: 0 32px;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-}
-
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1200px;
   width: 100%;
 }
-.brand {
-  justify-content: flex-start;
-  font-size: 40px;
- }
-.brand span {
-   cursor: pointer;
- }
-.list-links {
-    justify-content: center;
-
+mat-toolbar {
+  max-width: 1200px;
 }
+.brand a {
+  font-size: 3em;
+ }
 .list-links ul {
-      text-decoration: none;
-      list-style: none;
-      display: flex;
-      flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 .list-links ul li {
-        margin: 0 5px;
-        font-size: 16px;
+  margin: 0 5px;
+  font-size: 16px;
 }
 .list-links ul li a {
   text-decoration: none;
   cursor: pointer;
 }
-.social {
-    justify-content: flex-end;
-}
-.social a {
-      font-size: 24px;
-      margin: 0 0 0 5px;
-      cursor: pointer;
+
+span {
+  flex: 1 1 auto
 }

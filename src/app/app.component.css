@@ -1,4 +1,4 @@
-div {
+:host {
   display: grid;
   height: 100vh;
   grid-template-rows: 100px auto 100px;
@@ -9,11 +9,8 @@ app-navigation {
   grid-area: navi;
 }
 
-div .main-container {
+div {
   grid-area: main;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 app-footer {
