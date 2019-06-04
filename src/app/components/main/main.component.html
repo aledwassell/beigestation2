@@ -1,23 +1,22 @@
-
-  <mat-grid-list cols="4" rowHeight="466">
-    <mat-grid-tile
-      [colspan]="1"
-      [rowspan]="1">
-      <div class="video-list">
-        <app-video-item *ngFor="let video of (videoData$ | async)?.items"
-          [style.backgroundImage]="'url('+ video.snippet.thumbnails.high.url +')'"
-          [video]="video"
-          (videoSelected)="setVideoId($event)"></app-video-item>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile
-      [colspan]="3"
-      [rowspan]="1">
-      <app-youtube-player 
-        [videoId]="videoId"
-        [height]="466"
-        [width]="700">
-      </app-youtube-player>
-    </mat-grid-tile>
-  </mat-grid-list>
-  <app-shop></app-shop>
+<mat-grid-list cols="4" rowHeight="466">
+  <mat-grid-tile
+    [colspan]="1"
+    [rowspan]="1">
+    <div class="video-list">
+      <app-video-item *ngFor="let video of (videoData$ | async)?.items"
+        [style.backgroundImage]="'url('+ video.snippet.thumbnails.high.url +')'"
+        [video]="video"
+        (videoSelected)="setVideoId($event)"></app-video-item>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile
+    [colspan]="3"
+    [rowspan]="1">
+    <app-youtube-player 
+      [videoId]="videoId"
+      [height]="466"
+      [width]="700">
+    </app-youtube-player>
+  </mat-grid-tile>
+</mat-grid-list>
+<app-shop></app-shop>

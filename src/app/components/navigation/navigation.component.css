@@ -24,7 +24,6 @@ mat-toolbar {
   text-decoration: none;
   cursor: pointer;
 }
-
 span {
   flex: 1 1 auto
 }
