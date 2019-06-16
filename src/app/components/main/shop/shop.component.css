@@ -2,7 +2,7 @@
   background: linear-gradient(65deg, transparent 50%, transparent 50%, #ffffff 30%);
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  width: 100%;
 }
 
 .label-container {

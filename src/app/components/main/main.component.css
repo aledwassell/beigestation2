@@ -2,13 +2,9 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  max-width: 1200px;
   flex-direction: column;
 }
 
-.video-list {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  overflow: hidden;
+app-shop {
+  max-width: 1200px;
 }
